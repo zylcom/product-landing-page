@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="logo">
+        <img src="/img/Logo-Cube.png" alt="" id="header-img" />
+        <p>Magic Cube</p>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email" id="email-label">
+          <input type="email" name="email" id="email" placeholder="Enter your email address" required />
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </section>
+
+    <main>
+      <section id="features">
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-balance-scale"></i>
+          </div>
+          <div class="description">
+            <h2>Premium Quality</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, beatae?</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-dropbox"></i>
+          </div>
+          <div class="description">
+            <h2>Fast Shipping</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, illo.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-institution"></i>
+          </div>
+          <div class="description">
+            <h2>Quality Assurance</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, deserunt?</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <iframe
+          id="video"
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/-H0irspugGk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="pricing">
+        <div class="product" id="sticker">
+          <div class="tipe">
+            <p>Sticker</p>
+            <h3>Rp60.000,00</h3>
+            <ul>
+              <li>Lorem.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <input type="button" value="Choose">
+          </div>
+        </div>
+        <div class="product" id="stickerless">
+          <div class="tipe">
+            <p>Stickerless</p>
+            <h3>Rp120.000,00</h3>
+            <ul>
+              <li>Lorem.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <input type="button" value="Choose">
+          </div>
+        </div>
+        <div class="product" id="magnetic">
+          <div class="tipe">
+            <p>Magnetic</p>
+            <h3>Rp240.000,00</h3>
+            <ul>
+              <li>Lorem.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <input type="button" value="Choose" >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
