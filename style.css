@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  /* border: 1px red solid; */
+  /* border: 1px black solid; */
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  margin: 20px 0;
 }
 
 #header {
   width: 100%;
-  /* display: flex; */
-}
-
-#logo {
-  display: flex;
-  margin: 10px 0 10px 50px;
-  /* margin-left: 50px; */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #header-img {
@@ -28,16 +28,27 @@ body {
 
 #nav-bar {
   background-color: salmon;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   width: 100%;
   position: fixed;
-  float: right;
-  overflow: hidden;
+}
+
+.link-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
 }
 
 .nav-link {
-  float: right;
   color: #f2f2f2;
-  text-align: center;
   padding: 25px 18px;
   text-decoration: none;
   font-size: 17px;
@@ -49,7 +60,7 @@ body {
 }
 
 #form {
-  padding-top: 73px;
+  padding-top: 60px;
   margin: auto;
   text-align: center;
 }
@@ -68,6 +79,7 @@ body {
 
 .icon {
   font-size: 64px;
+  margin-bottom: 12px;
 }
 
 #review {
@@ -75,24 +87,22 @@ body {
 }
 
 #pricing {
-  padding-top: 65px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.product {
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  text-decoration: none;
 }
 
 li {
   list-style: none;
 }
 
-.product {
-  margin: 0 15px;
-  border: 2px black solid;
-  width: 100%;
-}
-
-.tipe > p {
+.tipe p {
   margin: 0;
   padding: 8px;
   font-size: 30px;
@@ -100,32 +110,56 @@ li {
   background-color: salmon;
 }
 
-.tipe > input {
-  margin: 10px 0;
+.tipe h3 {
+  margin-top: 10px;
+}
+
+.tipe input {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
   border-radius: 8px;
   font-size: 15px;
   font-weight: bold;
+  border: none;
   background-color: #4bb453;
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tipe input:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 576px) {
-  #logo {
+  section {
+    padding-top: 140px;
+  }
+
+  #logo p {
     display: none;
   }
 
+  #header-img {
+    width: 100px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   #features {
+    padding-top: 140px;
     flex-direction: column;
   }
 
   #pricing {
     flex-direction: column;
+    justify-content: space-around;
   }
 
   .product {
-    margin: 0 0 8px 0;
-  }
-
-  .tipe {
     width: 100%;
+    margin-bottom: 15px;
   }
 }

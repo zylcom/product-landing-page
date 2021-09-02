@@ -12,127 +12,130 @@
     />
   </head>
   <body>
-    <header id="header">
-      <nav id="nav-bar">
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#review" class="nav-link">Review</a>
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#" class="nav-link">Home</a>
-        <div id="logo">
-          <img src="/img/Logo-Cube2.png" alt="" id="header-img" />
-          <p>Magic Cube</p>
-        </div>
-      </nav>
-    </header>
+    <div class="container">
+      <header id="header">
+        <nav id="nav-bar">
+          <div class="link-list">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#review" class="nav-link">Review</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+          </div>
+          <div id="logo">
+            <img src="/img/Logo-Cube2.png" alt="" id="header-img" />
+            <p>Magic Cube</p>
+          </div>
+        </nav>
+      </header>
 
-    <section>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <label for="email" id="email-label">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter your email address"
-            required
-          />
-        </label>
-        <input type="submit" value="Submit" id="submit" />
-      </form>
-    </section>
-
-    <main>
-      <section id="features">
-        <div class="grid">
-          <div class="icon">
-            <i class="fa fa-balance-scale"></i>
-          </div>
-          <div class="description">
-            <h2>Premium Quality</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-              beatae?
-            </p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="icon">
-            <i class="fa fa-dropbox"></i>
-          </div>
-          <div class="description">
-            <h2>Fast Shipping</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-              illo.
-            </p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="icon">
-            <i class="fa fa-institution"></i>
-          </div>
-          <div class="description">
-            <h2>Quality Assurance</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-              deserunt?
-            </p>
-          </div>
-        </div>
+      <section>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="email" id="email-label">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </label>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
       </section>
 
-      <section id="review">
-        <iframe
-          id="video"
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/-H0irspugGk"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </section>
+      <main>
+        <section id="features">
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-balance-scale"></i>
+            </div>
+            <div class="description">
+              <h2>Premium Quality</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                beatae?
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-dropbox"></i>
+            </div>
+            <div class="description">
+              <h2>Fast Shipping</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                illo.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-institution"></i>
+            </div>
+            <div class="description">
+              <h2>Quality Assurance</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+                deserunt?
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <section id="pricing">
-        <div class="product" id="sticker">
-          <div class="tipe">
-            <p>Sticker</p>
-            <h3>Rp60.000,00</h3>
+        <section id="review">
+          <iframe
+            id="video"
+            width="100%"
+            height="500"
+            src="https://www.youtube.com/embed/-H0irspugGk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section id="pricing">
+          <div class="product" id="sticker">
+            <div class="tipe">
+              <p>Sticker</p>
+              <h3>Rp60.000,00</h3>
               <li>Lorem.</li>
               <li>Lorem, ipsum.</li>
               <li>Lorem, ipsum dolor.</li>
               <li>Lorem ipsum dolor sit.</li>
-            <input type="button" value="Choose" />
+              <input type="button" value="Choose" />
+            </div>
           </div>
-        </div>
 
-        <div class="product" id="stickerless">
-          <div class="tipe">
-            <p>Stickerless</p>
-            <h3>Rp120.000,00</h3>
+          <div class="product" id="stickerless">
+            <div class="tipe">
+              <p>Stickerless</p>
+              <h3>Rp120.000,00</h3>
               <li>Lorem.</li>
               <li>Lorem, ipsum.</li>
               <li>Lorem, ipsum dolor.</li>
               <li>Lorem ipsum dolor sit.</li>
-            <input type="button" value="Choose" />
+              <input type="button" value="Choose" />
+            </div>
           </div>
-        </div>
 
-        <div class="product" id="magnetic">
-          <div class="tipe">
-            <p>Magnetic</p>
-            <h3>Rp240.000,00</h3>
+          <div class="product" id="magnetic">
+            <div class="tipe">
+              <p>Magnetic</p>
+              <h3>Rp240.000,00</h3>
               <li>Lorem.</li>
               <li>Lorem, ipsum.</li>
               <li>Lorem, ipsum dolor.</li>
               <li>Lorem ipsum dolor sit.</li>
-            <input type="button" value="Choose" />
+              <input type="button" value="Choose" />
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
     <script src="/js/script.js"></script>
   </body>
 </html>
